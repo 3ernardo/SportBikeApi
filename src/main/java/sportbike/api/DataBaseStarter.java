@@ -11,11 +11,13 @@ import java.util.List;
 public class DataBaseStarter implements CommandLineRunner{
     private MotoPersistency motoPersistency;
     private VendaPersistency vendaPersistency;
+    private AcessorioPersistency acessorioPersistency;
 
     @Autowired
-    public DataBaseStarter (MotoPersistency motoPersistency,VendaPersistency vendaPersistency){
+    public DataBaseStarter (MotoPersistency motoPersistency, VendaPersistency vendaPersistency, AcessorioPersistency acessorioPersistency){
         this.motoPersistency = motoPersistency;
         this.vendaPersistency = vendaPersistency;
+        this.acessorioPersistency=acessorioPersistency;
     }
 
     @Override
@@ -31,7 +33,7 @@ public class DataBaseStarter implements CommandLineRunner{
 
         motoPersistency.save(motos);
 
-
+/*
         List<Venda> vendas = new ArrayList<>();
 
         vendas.add(new Venda((long) 10, "Paulo Souza", "11122233344", "3344-5566"));
@@ -39,6 +41,6 @@ public class DataBaseStarter implements CommandLineRunner{
         vendas.add(new Venda((long) 13, "Diogo Braga", "88822233311", "3300-5544"));
         vendas.add(new Venda((long) 12, "Luiza Costa", "55544488877", "3388-1188"));
 
-        vendaPersistency.save(vendas);
+        vendaPersistency.save(vendas);*/
     }
 }
