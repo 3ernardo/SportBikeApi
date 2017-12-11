@@ -11,7 +11,7 @@ public class Venda {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long codigo;
-    private Long moto;
+    private String moto;
     private String nomeCliente;
     private String cpfCliente;
     private String telefoneCliente;
@@ -19,7 +19,7 @@ public class Venda {
     public Venda() {
     }
 
-    public Venda(Long moto, String nomeCliente, String cpfCliente, String telefoneCliente) {
+    public Venda(String moto, String nomeCliente, String cpfCliente, String telefoneCliente) {
         this.moto = moto;
         this.nomeCliente = nomeCliente;
         this.cpfCliente = cpfCliente;
@@ -34,11 +34,11 @@ public class Venda {
         this.codigo = codigo;
     }
 
-    public Long getMoto() {
+    public String getMoto() {
         return moto;
     }
 
-    public void setMoto(Long moto) {
+    public void setMoto(String moto) {
         this.moto = moto;
     }
 

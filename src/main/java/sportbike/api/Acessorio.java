@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Acessorio {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long codigo;

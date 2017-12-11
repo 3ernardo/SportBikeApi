@@ -33,14 +33,15 @@ public class DataBaseStarter implements CommandLineRunner{
 
         motoPersistency.save(motos);
 
-/*
+        /*
         List<Venda> vendas = new ArrayList<>();
 
-        vendas.add(new Venda((long) 10, "Paulo Souza", "11122233344", "3344-5566"));
+        vendas.add(new Venda("{\"codigo\": 10, \"modelo\": \"Brutalle\", \"marca\": \"Ducatti\", \"cilindradas\": 900, \"preco\": 35000}", "Paulo Souza", "11122233344", "3344-5566"));
         vendas.add(new Venda((long) 15, "Jairo Silva", "77744499900", "3311-7766"));
         vendas.add(new Venda((long) 13, "Diogo Braga", "88822233311", "3300-5544"));
         vendas.add(new Venda((long) 12, "Luiza Costa", "55544488877", "3388-1188"));
 
-        vendaPersistency.save(vendas);*/
+        vendaPersistency.save(vendas);
+        */
     }
 }

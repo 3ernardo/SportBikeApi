@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/acessorio")
+@RequestMapping(value = "/acessorios")
 public class AcessorioController {
 
     private AcessorioPersistency acessorioPersistency;
