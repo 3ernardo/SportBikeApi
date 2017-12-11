@@ -23,7 +23,7 @@ public class VendaController {
 
     @RequestMapping(value = "/find/{id}", method = RequestMethod.GET)
     public Venda find(@PathVariable long id) {
-        return vendaPersistency.findByCodVendaEquals(id);
+        return vendaPersistency.findByCodigoEquals(id);
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
@@ -40,7 +40,7 @@ public class VendaController {
 
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
     public Venda update(@RequestBody Venda venda, @PathVariable long id) {
-        venda.setCodVenda(id);
+        venda.setCodigo(id);
         return vendaPersistency.save(venda);
     }
 }

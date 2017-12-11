@@ -10,59 +10,59 @@ public class Venda {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long codVenda;
-    private Long codMoto;
-    private String nome;
-    private String cpf;
-    private String telefone;
+    private Long codigo;
+    private Long moto;
+    private String nomeCliente;
+    private String cpfCliente;
+    private String telefoneCliente;
 
     public Venda() {
     }
 
-    public Venda(Long codMoto, String nome, String cpf, String telefone) {
-        this.codMoto = codMoto;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
+    public Venda(Long moto, String nomeCliente, String cpfCliente, String telefoneCliente) {
+        this.moto = moto;
+        this.nomeCliente = nomeCliente;
+        this.cpfCliente = cpfCliente;
+        this.telefoneCliente = telefoneCliente;
     }
 
-    public Long getCodVenda() {
-        return codVenda;
+    public Long getCodigo() {
+        return codigo;
     }
 
-    public void setCodVenda(Long codVenda) {
-        this.codVenda = codVenda;
+    public void setCodigo(Long codigo) {
+        this.codigo = codigo;
     }
 
-    public Long getCodMoto() {
-        return codMoto;
+    public Long getMoto() {
+        return moto;
     }
 
-    public void setCodMoto(Long codMoto) {
-        this.codMoto = codMoto;
+    public void setMoto(Long moto) {
+        this.moto = moto;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCliente() {
+        return nomeCliente;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getTelefoneCliente() {
+        return telefoneCliente;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefoneCliente(String telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
     }
 }

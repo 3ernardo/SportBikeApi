@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VendaPersistency extends JpaRepository<Venda, Long> {
-    Venda findByCodVendaEquals(Long id);
-    Boolean existsByCodVenda(Long id);
+    Venda findByCodigoEquals(Long id);
+    Boolean existsByCodigo(Long id);
 }
